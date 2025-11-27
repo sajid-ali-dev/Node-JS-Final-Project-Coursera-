@@ -1,26 +1,22 @@
-# Book Review App 
+📚 Node.js Book Review API
 
-## Setup
-1. `git clone <repo>`
-2. `cp .env.example .env` and fill secrets
-3. `npm install`
-4. `npm run dev` (requires nodemon) or `npm start`
+Node.js Book Review API is a professional, layered RESTful API for managing books and user reviews.
+This project was created as a final project for Coursera Node.js certification and follows best practices.
 
-API base: `http://localhost:3000/api`
+✅ Features
 
-Endpoints:
-- `POST /api/auth/register` { username, password }
-- `POST /api/auth/login` => returns token
-- `GET /api/books`
-- `GET /api/books/isbn/:isbn`
-- `GET /api/books/author/:author`
-- `GET /api/books/title/:title`
-- `GET /api/books/review/:isbn`
-- `PUT /api/books/review/:isbn` (protected) { review }
-- `DELETE /api/books/review/:isbn` (protected)
+View all books in the store
 
-Client examples in `src/client/client.js`.
+Search books by ISBN, author, or title
 
-## Notes
-- This uses JSON file storage in `/data`. Swap repository implementation to use a DB (Postgres/Mongo) in `src/repositories/*` for production.
-- Add tests in `__tests__` using `jest` + `supertest`.
+View and manage book reviews
+
+Register and login users with JWT authentication
+
+Async/await, Promises, and callbacks demonstrated
+
+Validation, error handling, and logging implemented
+
+Layered architecture: routes → controllers → services → repositories
+
+Persistent storage using JSON files (easily replaceable with a DB)
