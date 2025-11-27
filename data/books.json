@@ -1,0 +1,16 @@
+{
+  "9780143127796": {
+    "isbn": "9780143127796",
+    "title": "Example Book One",
+    "author": "Alice",
+    "reviews": {
+      "sajidali": "Test review"
+    }
+  },
+  "9780553418026": {
+    "isbn": "9780553418026",
+    "title": "Example Book Two",
+    "author": "Bob",
+    "reviews": {}
+  }
+}
